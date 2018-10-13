@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:300,400");
 body {
-  font: 16px Monsterrat, sans-serif;
+  font: 16px "Montserrat", sans-serif;
   color: #fff;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-bottom: 5%;
 }
 
 .row {
@@ -26,7 +30,19 @@ a {
   color: #fff;
 }
 a:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta {
   color: #6a64de;
+}
+.cta:hover {
+  color: #6a64de;
+}
+.cta img {
+  padding: 5px;
 }
 
 .container {
@@ -41,6 +57,11 @@ nav {
   transition: ease all 1s;
   border-top: 1px solid rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  max-width: 1920px;
+  margin: 0 auto;
+}
+nav .navbar-brand {
+  padding-left: 1em;
 }
 nav li {
   font-size: 0.8em;
@@ -58,6 +79,13 @@ nav li:hover {
   background: #fff;
   color: #6a64de;
 }
+nav li a {
+  width: 100%;
+  height: 100%;
+}
+nav li a:hover {
+  color: #6a64de;
+}
 
 section {
   position: relative;
@@ -69,14 +97,8 @@ section a {
 }
 
 p {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
-}
-
-.box {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
 }
 
 .hero {
@@ -101,14 +123,25 @@ p {
   flex-flow: column;
   text-align: center;
 }
+.hero .overlay .arw {
+  display: inline-block;
+}
+.hero .overlay .arw svg {
+  margin-right: 10px;
+  fill: #fff;
+}
 .hero .overlay h4 {
   font-size: 0.8em;
   text-transform: uppercase;
+  display: inline-flex;
 }
 .hero .overlay .menu {
   text-transform: uppercase;
   margin: 3% auto;
   width: 60%;
+}
+.hero .overlay .menu a:hover {
+  color: #000;
 }
 .hero .overlay .menu h3 {
   font-size: 1em;
@@ -125,7 +158,7 @@ p {
 }
 .hero .overlay .menu li {
   list-style: none;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
   height: 60px;
   flex-flow: row;
@@ -143,6 +176,9 @@ p {
   background: white;
   color: #000;
 }
+.hero .overlay .menu li:hover svg {
+  fill: #000;
+}
 .hero .overlay .menu li svg {
   fill: #fff;
   width: 20px;
@@ -152,18 +188,99 @@ p {
 .sec-1 .row {
   max-width: 80%;
   margin: 0 auto;
-  height: 80vh;
+  padding-bottom: 5%;
 }
 .sec-1 h2 {
   color: #000;
-  padding-top: 30%;
+  padding-top: 25%;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 5%;
+  font-size: 2.5em;
 }
 .sec-1 p {
   color: #000;
+  padding-right: 15%;
+  line-height: 1.5;
+  font-size: 1.3em;
 }
-.sec-1 img {
-  padding: 20% 0 10% 10%;
+.sec-1 .label {
+  font: 700 2em "Montserrat", sans-serif;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  z-index: 5;
+  color: #fff;
+}
+.sec-1 .main-img {
+  padding: 15% 0 10% 10%;
   width: 100%;
+  position: relative;
+}
+.sec-1 .main-img .label {
+  bottom: 8%;
+}
+.sec-1 .inset-img {
+  position: relative;
+  z-index: 2;
+  margin-top: -34%;
+  margin-left: -15%;
+}
+.sec-1 .inset-img .label {
+  right: 50%;
+}
+
+.deals .col {
+  padding: 1em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.deals h1 {
+  text-transform: uppercase;
+  color: #6a64de;
+  font: 500 1.5em "Montserrat", sans-serif;
+  letter-spacing: 4px;
+}
+
+.carousel {
+  display: flex;
+}
+.carousel .card {
+  margin: 0 30px;
+  border-radius: 5px;
+  border: solid 1px #e1e1e1;
+}
+.carousel .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+.carousel .flight {
+  padding: 1em;
+}
+.carousel .flight img {
+  width: 20px;
+  display: inline-block;
+}
+.carousel .flight h3 {
+  text-transform: uppercase;
+  color: #959698;
+  font-size: 1em;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+.carousel .flight p {
+  font: 300 1.3em "Roboto", sans-serif;
+  color: #000;
+}
+.carousel .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .details span {
+  display: flex;
 }
 
 /*# sourceMappingURL=theme.css.map */
