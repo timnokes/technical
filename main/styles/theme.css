@@ -1,0 +1,169 @@
+body {
+  font: 16px Monsterrat, sans-serif;
+  color: #fff;
+}
+
+.row {
+  margin: 0;
+}
+
+.col {
+  padding: 0;
+}
+
+.container {
+  padding: 0;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+a {
+  color: #fff;
+}
+a:hover {
+  color: #6a64de;
+}
+
+.container {
+  background: #fff;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+nav {
+  -webkit-transition: ease all 1s;
+  -ms-transition: ease all 1s;
+  transition: ease all 1s;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+nav li {
+  font-size: 0.8em;
+  background: #6a64de;
+  min-width: 100px;
+  margin: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+nav li:hover {
+  background: #fff;
+  color: #6a64de;
+}
+
+section {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+section a {
+  background: transparent;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: url(../images/hero-colour.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+}
+.hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+.hero .overlay h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.hero .overlay .menu {
+  text-transform: uppercase;
+  margin: 3% auto;
+  width: 60%;
+}
+.hero .overlay .menu h3 {
+  font-size: 1em;
+  font-weight: 500;
+}
+.hero .overlay .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.hero .overlay .menu li {
+  list-style: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  height: 60px;
+  flex-flow: row;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+  margin: 5px;
+  width: 23%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .overlay .menu li:hover {
+  background: white;
+  color: #000;
+}
+.hero .overlay .menu li svg {
+  fill: #fff;
+  width: 20px;
+  margin: 1em;
+}
+
+.sec-1 .row {
+  max-width: 80%;
+  margin: 0 auto;
+  height: 80vh;
+}
+.sec-1 h2 {
+  color: #000;
+  padding-top: 30%;
+}
+.sec-1 p {
+  color: #000;
+}
+.sec-1 img {
+  padding: 20% 0 10% 10%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=theme.css.map */
