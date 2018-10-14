@@ -16,6 +16,11 @@ body {
     font: 10px "Montserrat", sans-serif;
   }
 }
+@media only screen and (max-width: 576px) {
+  body {
+    font: 8px "Montserrat", sans-serif;
+  }
+}
 
 .row {
   margin: 0;
@@ -208,6 +213,11 @@ p {
   justify-content: center;
   display: flex;
 }
+@media only screen and (max-width: 576px) {
+  .hero {
+    padding-top: 10%;
+  }
+}
 .hero .overlay {
   position: absolute;
   width: 100%;
@@ -246,6 +256,11 @@ p {
     margin: 3%;
   }
 }
+@media (max-width: 1200px) {
+  .hero .overlay .menu {
+    width: 80%;
+  }
+}
 .hero .overlay .menu a {
   width: 23%;
   margin: 7px;
@@ -253,6 +268,7 @@ p {
 @media only screen and (max-width: 576px) {
   .hero .overlay .menu a {
     width: 50%;
+    margin: 5px;
   }
 }
 .hero .overlay .menu a:hover {

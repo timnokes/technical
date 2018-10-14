@@ -5,7 +5,8 @@ $roboto: 'Roboto', sans-serif;
 $primary-color: #fff;
 $secondary-color: #6a64de;
 
-
+// Small smartphones
+$screen-sm-max: 375px;
 // Small tablets and large smartphones (landscape view)
 $screen-sm-max: 576px;
 
@@ -18,6 +19,12 @@ $screen-lg-max: 992px;
 // Large tablets and desktops
 $screen-xl-max: 1200px;
 
+// Extra Small devices
+@mixin xs {
+   @media only screen and (max-width: #{$screen-sm-max}) {
+       @content;
+   }
+}
 // Small devices
 @mixin sm {
    @media only screen and (max-width: #{$screen-sm-max}) {
@@ -74,7 +81,11 @@ body {
     @include sm{
   	  font: 10px $montserrat;
   }
+      @include xs{
+  	  font: 8px $montserrat;
+  }
 }
+
 
 .row{margin: 0;}
 .col{padding:0;}
@@ -238,8 +249,11 @@ p{
 	@include background-size(cover);
     justify-content: center;
     display: flex;
+    @include sm{
+    	padding-top:10%;
+    }
 
-.overlay{
+	.overlay{
 	position: absolute; width: 100%; height:100%; color: $primary-color;
 	display:flex;
 	align-items:center;
@@ -269,11 +283,15 @@ p{
 		    	width:100%;
 		    	margin: 3%;
 		    }
+		    @include xl {
+		    	width:80%;
+		    }
 		    a{
 		    	width:23%;
 		    	margin:7px;
 		    	@include sm{
 					width:50%;
+					margin:5px;
 				}
 		    	&:hover{
 		    		color:#000;
